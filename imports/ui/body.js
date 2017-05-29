@@ -6,6 +6,10 @@ import './body.html';
 
 Template.body.helpers({
   api_logs() {
-      return Api_logs.find({});
+    return Api_logs.find({}, {
+      sort: {
+        timeStamp: -1,
+      }
+    });
   }
 });
