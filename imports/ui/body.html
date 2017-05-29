@@ -1,0 +1,22 @@
+
+<body>
+  <div class="container">
+    <header>
+      <h1>api logs</h1>
+    </header>
+
+    <div class="log-container">
+      {{#each api_logs}}
+        {{> api_log}}
+      {{/each}}
+    </div>
+  </div>
+</body>
+
+<template name="api_log">
+    <div class="log-row">
+  <div class="log-cell">{{timeStamp}}</div>
+  <div class="log-cell">{{clientName}}</div>
+  <div class="log-cell">{{endPoint}}</div>
+    </div>
+</template>
