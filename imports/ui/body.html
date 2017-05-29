@@ -13,14 +13,14 @@
     </header>
 
     <div class="log-container">
-      {{#each api_logs}}
-        {{> api_log}}
+      {{#each apilogs}}
+        {{> apilog}}
       {{/each}}
     </div>
   </div>
 </body>
 
-<template name="api_log">
+<template name="apilog">
     <div class="log-row">
   <div class="log-cell">{{timeStamp}}</div>
   <div class="log-cell">{{clientName}}</div>
